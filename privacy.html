@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-TZ">
+<html lang="en-TZ" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +9,111 @@
     <meta property="og:url" content="https://dsmiotict.tz/privacy.html">
     <meta property="og:title" content="Privacy Policy | DSM IOT AND ICT">
     <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tzblue: '#1E40AF',
+                        charcoal: '#111827',
+                        light: '#f8fafc',
+                        tzgreen: '#1EB53A',
+                        tzyellow: '#FCD116',
+                        tzsky: '#00A3DD'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        poppins: ['Poppins', 'Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { -webkit-font-smoothing: antialiased; }
+    </style>
 </head>
-<body class="bg-white text-slate-800">
+<body class="bg-white text-slate-800 font-sans">
+    <!-- Tanzania Flag Accent -->
+    <div class="flex w-full h-1">
+        <div class="w-1/4 bg-tzgreen"></div>
+        <div class="w-1/4 bg-tzyellow"></div>
+        <div class="w-1/4 bg-black"></div>
+        <div class="w-1/4 bg-tzsky"></div>
+    </div>
+
     <div class="max-w-3xl mx-auto px-6 py-16">
-        <h1 class="text-3xl font-bold text-slate-900 mb-8">Privacy Policy</h1>
+        <h1 class="text-3xl font-bold text-slate-900 mb-8 font-poppins" data-aos="fade-up">Privacy Policy</h1>
         <div class="space-y-6 text-slate-700 leading-relaxed">
-            <p><strong>DSM IOT AND ICT COMPANY LIMITED</strong> respects your privacy. This website collects only information you voluntarily provide via our contact form (name, email, company).</p>
+            <p data-aos="fade-up" data-aos-delay="100"><strong>DSM IOT AND ICT COMPANY LIMITED</strong> respects your privacy. This website collects only information you voluntarily provide via our contact form (name, email, company).</p>
             
-            <div>
-                <h2 class="text-xl font-semibold text-slate-900 mb-2">Vision AI Data</h2>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-xl font-semibold text-slate-900 mb-2 font-poppins">Vision AI Data</h2>
                 <p>All ElaraRise Vision AI deployments operated by DSM process video 100% on-device (NVIDIA Jetson). No video, images, or facial data is sent to the cloud. We do not use facial recognition or biometric identification. We provide only aggregated counts and events.</p>
             </div>
 
-            <div>
-                <h2 class="text-xl font-semibold text-slate-900 mb-2">Data Localization</h2>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h2 class="text-xl font-semibold text-slate-900 mb-2 font-poppins">Data Localization</h2>
                 <p>Operational data is stored within Tanzania where required. We comply with the Tanzania Personal Data Protection Act and TCRA guidelines.</p>
             </div>
 
-            <div>
-                <h2 class="text-xl font-semibold text-slate-900 mb-2">Data from Meta Platforms</h2>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h2 class="text-xl font-semibold text-slate-900 mb-2 font-poppins">Data from Meta Platforms</h2>
                 <p>We do not currently collect, store, or process data from Meta platforms including Facebook, Instagram, or WhatsApp. If this changes, this policy will be updated 30 days prior to any new data collection.</p>
             </div>
 
-            <div>
-                <h2 class="text-xl font-semibold text-slate-900 mb-2">Cookies & Tracking</h2>
+            <div data-aos="fade-up" data-aos-delay="500">
+                <h2 class="text-xl font-semibold text-slate-900 mb-2 font-poppins">Cookies & Tracking</h2>
                 <p>This website does not use cookies, Meta Pixel, Google Analytics, or any third-party tracking technologies.</p>
             </div>
 
-            <div>
-               <h2>Contact for Data Privacy</h2>
-<p>For questions about this Privacy Policy or to exercise your data rights under Tanzanian Data Protection Act, contact:</p>
-<p>
-<strong>DSM IOT AND ICT COMPANY LIMITED</strong><br>
-BRELA Reg No: 190321487<br>
-Email: <a href="mailto:privacy@dsmiotict.tz">privacy@dsmiotict.tz</a><br>
-P.O. Box, Dar es Salaam, Tanzania
-</p>
-<p>Response time: 30 days.</p>
+            <div data-aos="fade-up" data-aos-delay="600">
+               <h2 class="text-xl font-semibold text-slate-900 mb-2 font-poppins">Contact for Data Privacy</h2>
+               <p>For questions about this Privacy Policy or to exercise your data rights under Tanzanian Data Protection Act, contact:</p>
+               <p>
+               <strong>DSM IOT AND ICT COMPANY LIMITED</strong><br>
+               BRELA Reg No: 190321487<br>
+               Email: <a href="mailto:privacy@dsmiotict.tz" class="text-tzblue hover:text-blue-800">privacy@dsmiotict.tz</a><br>
+               P.O. Box, Dar es Salaam, Tanzania
+               </p>
+               <p>Response time: 30 days.</p>
             </div>
 
-            <p class="text-sm text-slate-500 pt-6 border-t">Last updated: May 9, 2026</p>
+            <p class="text-sm text-slate-500 pt-6 border-t" data-aos="fade-up" data-aos-delay="700">Last updated: May 9, 2026</p>
         </div>
-        <div class="mt-10"><a href="/" class="text-blue-700 hover:text-blue-800">← Back to Home</a></div>
+        <div class="mt-10" data-aos="fade-up" data-aos-delay="800">
+            <a href="/" class="text-tzblue hover:text-blue-800 font-medium">← Back to Home</a>
+        </div>
     </div>
+
+    <script>
+        // AOS + GSAP Init
+        gsap.registerPlugin(ScrollTrigger);
+        AOS.init({
+          duration: 800,
+          once: true,
+          easing: 'ease-out-cubic'
+        });
+
+        // Title entrance
+        gsap.from("h1", {
+          y: 30,
+          opacity: 0,
+          duration: 1,
+          ease: "power3.out",
+          delay: 0.1
+        });
+    </script>
 </body>
 </html>
